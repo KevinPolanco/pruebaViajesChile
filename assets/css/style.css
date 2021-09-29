@@ -1,3 +1,17 @@
 .navbar {
     background: none;
   }
+
+body {
+  color: white;
+  background-color: black;
+}
+
+hr {
+  padding: 2px;
+}
+
+.celeste {
+  background-color: #0dcaf0;
+  border-color: #0dcaf0;
+}
