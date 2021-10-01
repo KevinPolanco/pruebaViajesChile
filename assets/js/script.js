@@ -5,13 +5,11 @@ $(function(){
     // codigo que cambia de color la barra de navegacion al hacer scroll
     window.addEventListener("scroll", function(){
         if(window.pageYOffset > 100){
-            nav.classList.add("celeste","shadow");
+            nav.classList.add("combinacionColor1","shadow");
         }else{
-            nav.classList.remove("celeste", "shadow");
+            nav.classList.remove("combinacionColor1", "shadow");
         }
     });
 
-
-   
 
 });

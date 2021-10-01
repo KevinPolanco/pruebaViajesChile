@@ -15,7 +15,7 @@
       href="https://fonts.gstatic.com" 
       crossorigin>
     <link 
-      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" 
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" 
       rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -44,7 +44,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
+    <nav id="navbar-example" class="navbar navbar-expand-md navbar-dark  fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#"><img  src="assets/img/viajes.svg" alt=""> Viajes Chile</a>
          
@@ -65,7 +65,7 @@
                 <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#destacados">Destacado</a>
+                <a class="nav-link " href="#destacados">Destacado</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contacto">Contacto</a>
@@ -75,8 +75,9 @@
         </div>
       </nav>
 
+    <!-- carrusel  -->
     <header id="inicio" class="mb-3">
-        <!-- carrusel  -->
+        
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -101,13 +102,14 @@
     </header>
     
 
-    <main id="quienesSomos" class="container d-none d-md-block mb-5">
-        <h5 class="text-center py-2">¿Quines somos?</h5>
-        <hr class="celeste mb-4">
+    <main id="quienesSomos" class="d-none d-md-block mb-5 ">
+        <div class="container">
+          <h3 class="text-center py-2">¿Quines somos?</h3>
+        <hr class="mb-4">
         <div class="row">
           <div data-aos="zoom-out-right"
-          data-aos-duration="2000" class="col-12 col-md-4">
-            <div class="text-center celeste py-1 mb-2">
+          data-aos-duration="2000" class="col-12 col-md-4 shadow">
+            <div class="text-center combinacionColor2 py-1 mb-2">
               <i class="fas fa-plane fa-2x "></i>
             </div>
             <p>
@@ -120,13 +122,13 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat fugit velit dolorem deleniti est expedita, omnis minus ex voluptas explicabo nihil error eveniet asperiores, unde ad sapiente autem repellendus laboriosam?
               Eius laudantium veritatis distinctio quas tenetur natus rerum exercitationem at cumque dolorum et illum, quidem impedit ullam eveniet totam odit quis non voluptates, perferendis aliquid! Temporibus molestias repellat perferendis minima.
             </p>
-            <div class="text-center celeste py-1 mt-2">
+            <div class="text-center py-1 mt-2 combinacionColor2">
               <i class="fas fa-mountain fa-2x"></i>
             </div>
           </div>
           <div data-aos="zoom-out-left"
-          data-aos-duration="2000" class="col-12 col-md-4">
-            <div class="text-center celeste py-1 mb-2">
+          data-aos-duration="2000" class="col-12 col-md-4 shadow">
+            <div class="text-center py-1 mb-2 combinacionColor2">
               <i class="fas fa-route fa-2x"></i>
             </div>
             <p>
@@ -135,88 +137,313 @@
             </p>
           </div>
         </div>
+        </div>
 
     </main>
 
-
-    <section id="destacados" class="container mb-5">
-        <!-- destacados -->
-        <h5 class="text-center py-2">Destacados</h5>
-        <hr class="celeste mb-4">
+    <!-- seccion destacados con las tarjetas-->
+    <article id="destacados" class="container mb-5">
+        
+        <h3 class="text-center py-2">Destacados</h2>
+        <hr class="mb-4">
       <div class="row">
         
-        <div data-aos="fade-up"
-        data-aos-duration="4000" class="col-12 col-md-6 col-lg-3 mb-3">
-          <div class="card h-100 celeste">
+        <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <div data-aos="fade-up"
+          data-aos-duration="4000"
+          class="card h-100 shadow combinacionColor1 sobre">
             <img src="assets/img/card1.jpg" class="card-img-top" alt="Parque Nacional Torres del Paine">
             <div class="card-body">
-              <h5 class="card-title bold py-2">Parque Nacional Torres del Paine</h5>
-              <p class="card-text py-2 cardsp2">El Parque Nacional Torres del Paine, en la región de la Patagonia de Chile, es conocido por sus altas montañas, los témpanos de azul brillante que se aferran a los glaciares y las pampas doradas (praderas) que albergan fauna poco común, como los guanacos.</p>
+              <h5 class="card-title py-2">Parque Nacional Torres del Paine</h5>
+              <p class="card-text py-2 ">El Parque Nacional Torres del Paine, en la región de la Patagonia de Chile, es conocido por sus altas montañas, los témpanos de azul brillante que se aferran a los glaciares y las pampas doradas (praderas) que albergan fauna poco común, como los guanacos.</p>
+              
+            </div>
+            <div class="mx-3 my-3">
+              <button 
+              type="button" 
+              class="btn combinacionColor2" 
+              data-bs-toggle="modal" data-bs-target="#paine">
+                Saber más
+            </button>
             </div>
           </div>
         </div>
         
-        <div data-aos="fade-up"
-        data-aos-duration="4000" class="col-12 col-md-6 col-lg-3 mb-3">
-          <div class="card h-100 celeste">
+        <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <div  data-aos="fade-up"
+          data-aos-duration="4000" 
+          class="card h-100 shadow combinacionColor1 sobre">
             <img src="assets/img/card2.jpg" class="card-img-top" alt="Reserva Nacional Los Flamencos">
             <div class="card-body">
-              <h5 class="card-title bold py-2">Reserva Nacional Los Flamencos</h5>
-              <p class="card-text py-2 cardsp2">La Reserva Nacional los Flamencos fue creada en 1990 por la CONAF, posee 73 986,5 ha, se ubica en la cuenca del salar de Atacama, en la comuna de San Pedro de Atacama, Región de Antofagasta, en Chile.</p>
+              <h5 class="card-title py-2 ">Reserva Nacional Los Flamencos</h5>
+              <p class="card-text py-2">La Reserva Nacional los Flamencos fue creada en 1990 por la CONAF, posee 73 986,5 ha, se ubica en la cuenca del salar de Atacama, en la comuna de San Pedro de Atacama, Región de Antofagasta, en Chile.</p>
+            </div>
+            <div class="mx-3 my-3" >
+              <button 
+              type="button" 
+              class="btn combinacionColor2" 
+              data-bs-toggle="modal" data-bs-target="#flamencos">
+                Saber más
+            </button>
             </div>
           </div>
         </div>
         
         <div class="col-12 col-md-6 col-lg-3 mb-3">
           <div data-aos="fade-up"
-          data-aos-duration="4000" class="card h-100 celeste">
+          data-aos-duration="4000" 
+          class="card h-100 shadow combinacionColor1 sobre">
             <img src="assets/img/card3.jpg" class="card-img-top" alt="Parque Laguna Chaxa">
             <div class="card-body">
-              <h5 class="card-title bold py-2">Parque Laguna Chaxa</h5>
-              <p class="card-text py-2 cardsp2">La laguna Chaxa es un cuerpo de agua superficial ubicado en el Salar de Atacama, en la comuna de San Pedro de Atacama, Provincia de El Loa, norte de Chile. Es un destino turístico, así como una estación de observación ornitológica (principalmente de flamencos).</p>
+              <h5 class="card-title py-2 ">Parque Laguna Chaxa</h5>
+              <p class="card-text py-2 ">La laguna Chaxa es un cuerpo de agua superficial ubicado en el Salar de Atacama, en la comuna de San Pedro de Atacama, Provincia de El Loa, norte de Chile. Es un destino turístico, así como una estación de observación ornitológica (principalmente de flamencos).</p>
+            </div>
+            <div class="mx-3 my-3">
+              <button 
+                type="button" 
+                class="btn combinacionColor2" 
+                data-bs-toggle="modal" data-bs-target="#chaxa">
+                  Saber más
+              </button>
             </div>
           </div>
         </div>
         
-        <div class="col-12 col-md-6 col-lg-3 mb-3">
+        <div class="col-12 col-md-6 col-lg-3 mb-3 ">
           <div data-aos="fade-up"
-          data-aos-duration="4000" class="card h-100 celeste">
+          data-aos-duration="4000" 
+          class="card h-100 shadow combinacionColor1 sobre">
             <img src="assets/img/card4.jpg" class="card-img-top" alt="Bosque valdiviano">
             <div class="card-body">
-              <h5 class="card-title bold py-2">Bosque valdiviano</h5>
-              <p class="card-text py-2 cardsp2">El bosque valdiviano, también llamado selva valdiviana, o bosque andino patagónico es una ecorregión del centro-sur de Chile. Se caracteriza por tener bosques siempre verdes de múltiples estratos, en un clima templado-lluvioso u oceánico.</p>
+              <h5 class="card-title py-2 ">Bosque valdiviano</h5>
+              <p class="card-text py-2 ">El bosque valdiviano, también llamado selva valdiviana, o bosque andino patagónico es una ecorregión del centro-sur de Chile. Se caracteriza por tener bosques siempre verdes de múltiples estratos, en un clima templado-lluvioso u oceánico.</p>
+            </div>
+            <div class="mx-3 my-3">
+              <button 
+                type="button" 
+                class="btn combinacionColor2" 
+                data-bs-toggle="modal" data-bs-target="#bosque">
+                  Saber más
+              </button>
             </div>
           </div>
         </div>
 
       </div>
         
-    </section>
+    </article>
 
+    <!-- inicio modales -->
+
+    <div 
+      class="modal fade" 
+      id="paine" 
+      data-bs-backdrop="static" 
+      data-bs-keyboard="false" 
+      tabindex="-1" 
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content combinacionColor1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Parque Nacional Torres del Paine</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/card1.jpg" class="img-fluid" alt="Parque Nacional Torres del Paine">
+            <p>
+              El parque nacional Torres del Paine es una de las áreas silvestres protegidas más importantes de Chile. Se encuentra ubicado entre la Cordillera de los Andes y la estepa Patagónica, en la Comuna de Torres del Paine, provincia de Última Esperanza, entre los 51° de latitud sur y 72° 57' de longitud oeste, distante unos 150 km de Puerto Natales y a 318.2 km de Punta Arenas. Fue creada el año 1959 y es administrada por la Corporación Nacional Forestal.
+            </p>
+            <p>
+              Con un territorio de 227 298 hectáreas, comprende la cordillera Paine y su famoso macizo, que incluye las cumbres Paine Grande y sus conocidas torres, que le otorgan su nombre. En su interior se encuentran una gran variedad de hitos geográficos naturales como valles, el río Paine, los lagos Grey, Pehoé, Nordenskjöld y Sarmiento, y los glaciares Grey, Pingo y Tyndall, pertenecientes al Campo de Hielo Patagónico Sur. A contar del año 1978, el área fue incorporada como reserva de la biosfera por la UNESCO.
+            </p>
+            <p>
+              Conocido internacionalmente por la belleza escénica de su entorno, recibe anualmente más de 280 000 visitantes, la mayoría de ellos extranjeros, convirtiéndose en la tercera área protegida chilena por visitas, Entre sus reconocimientos, en una edición especial de la revista National Geographic, las Torres del Paine fueron escogidas como el quinto lugar más hermoso del mundo. Igualmente, el parque fue seleccionado como la octava maravilla del mundo en 2013, luego de que recibiera más de cinco millones de votos en el concurso que realizó el sitio Virtual Tourist.
+            </p>
+            <p>
+              Dueño de una rica historia, este territorio fue primeramente habitado por el pueblo indígena Aonkienk o Tehuelches, cuyos registros, en algunos casos, alcanzan más de 3500 años de historia, y cuyos vestigios se encuentran dentro del actual parque nacional.​ Este pueblo se vio gravemente afectado por la llegada de colonizadores occidentales en la zona de Última Esperanza a partir del año 1870, lo que derivó en su desaparición y expulsión.8 A partir del año 1900, la zona fue objeto de una rápida colonización para la explotación ganadera, siendo subdividida en 12 predios que abarcaron tamaños entre 600 y más de 10 000 hectáreas.​ El año 1959, como producto de diferentes campañas de habitantes de la Región y de visitantes, durante el gobierno del presidente Jorge Alessandri se estableció una primera área protegida, la cual fue rápida y sucesivamente ampliada hasta alcanzar el tamaño actual.
+            </p>
+            <p>
+              El establecimiento de este parque nacional ha permitido la protección y recuperación de grandes zonas explotadas anteriormente con fines ganaderos y agrícolas, además de una transformación de la economía de la Región con un crecimiento sostenido del turismo y sus servicios asociados.​ Se ha estimado al año 2018, que este parque contribuye al 10 % del producto interno bruto regional, equivalente a M$190.000. Pese a esta situación, el territorio se ha visto afectado por grandes incendios forestales que han dañado grandes extensiones de su territorio, destacándose los eventos de los años 1883, 1985 (12 500 ha), 2005 (15 000 ha) y 2011-2012 (17 600 ha).
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button 
+              type="button" 
+              class="btn combinacionColor2" 
+              data-bs-dismiss="modal">
+                Cerrar
+            </button>
+            <button 
+              type="button" 
+              class="btn combinacionColor2">
+              <a 
+                href="https://parquetorresdelpaine.cl/" 
+                target="_blank">
+                  Más información
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div 
+      class="modal fade" 
+      id="flamencos" 
+      data-bs-backdrop="static" 
+      data-bs-keyboard="false" 
+      tabindex="-1" 
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content combinacionColor1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Reserva Nacional Los Flamencos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/card2.jpg" class="img-fluid" alt="Parque Nacional Torres del Paine">
+           <p>
+            La Reserva Nacional los Flamencos fue creada en 1990 por la CONAF, posee 73 986,5 ha, se ubica en la cuenca del salar de Atacama, en la comuna de San Pedro de Atacama, Región de Antofagasta, en Chile.
+           </p>
+           <p>
+            Esta Reserva está dividida en 7 sectores ubicados a diferentes alturas, cada uno con condiciones climáticas particulares, lo que provoca que cada sector posea diferente población vegetal y animal.
+           </p>
+           <p>
+            Algunos sitios de la reserva poseen importancia arqueológica ya que en ellos se encuentran vestigios de pueblos precolombinos, como la Aldea de Tulor.
+           </p>
+          </div>
+          <div class="modal-footer">
+            <button 
+              type="button" 
+              class="btn combinacionColor2" 
+              data-bs-dismiss="modal">
+                Cerrar
+            </button>
+            <button 
+              type="button" 
+              class="btn combinacionColor2">
+              <a 
+                href="https://www.conaf.cl/parques/reserva-nacional-los-flamencos/" 
+                target="_blank">
+                  Más información
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div 
+      class="modal fade" 
+      id="chaxa" 
+      data-bs-backdrop="static" 
+      data-bs-keyboard="false" 
+      tabindex="-1" 
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content combinacionColor1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Parque Laguna Chaxa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/card3.jpg" class="img-fluid" alt="Parque Laguna Chaxa">
+            <p>
+              La laguna está a unos 7 km de Toconao y un poco menos de 50 km de San Pedro de Atacama. Se encuentra dentro del Sistema de Protección de áreas silvestres de la CONAF, y se encuadra dentro de la Reserva nacional Los Flamencos. Se considera uno de los mejores lugares en Chile para avistar flamencos, junto al Salar de Surire en la Región de Arica y Parinacota.
+            </p>
+            <p>
+              La Laguna Chaxa es una laguna altiplática de estratos fangosos y poca profundidad. La Laguna permite la proliferación de microinvertebrados y de formas microscópicas, que son la base de la alimentación de los flamencos, entre otras aves.
+            </p>
+            <p>
+              La única entrada y salida superficial de la laguna es el canal Burro Muerto, que la comunica con la laguna Barros Negros.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button 
+              type="button" 
+              class="btn combinacionColor2" 
+              data-bs-dismiss="modal">
+                Cerrar
+            </button>
+            <button 
+              type="button" 
+              class="btn combinacionColor2">
+              <a 
+                href="https://www.conaf.cl/parques/reserva-nacional-los-flamencos/" 
+                target="_blank">
+                  Más información
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div 
+      class="modal fade" 
+      id="bosque" 
+      data-bs-backdrop="static" 
+      data-bs-keyboard="false" 
+      tabindex="-1" 
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content combinacionColor1">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Bosque valdiviano</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/card4.jpg" class="img-fluid" alt="Bosque valdiviano">
+            <p>
+              El bosque templado valdiviano abarca una superficie de unos 300.000-400.000 km² entre el paralelo 37º S y el 48º S,2 si bien no existe acuerdo sobre sus límites, pues — aunque la mayoría de los autores coincide en incluir en primer lugar las formaciones arbóreas con predominio de angiospermas siempreverdes de hojas anchas y brillantes (laurifolias) — se producen divergencias por la inclusión o no de bosques caducifolios de clima mediterráneo y de bosques de coníferas. Debido a su aislamiento — flanqueado por el matorral chileno , la cordillera de los Andes al este y el océano pacífico en el oeste y sur —, la selva valdiviana se considera una isla biogeográfica.​ Por este motivo, presenta un elevado porcentaje de especies endémicas, y se considera uno de los 34 puntos más biodiversos del planeta. La fisonomía del paisaje es la de un bosque muy denso y oscuro que presenta una estratificación donde es posible reconocer de cuatro a cinco doseles.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button 
+              type="button" 
+              class="btn combinacionColor2" 
+              data-bs-dismiss="modal">
+                Cerrar
+            </button>
+            <button 
+              type="button" 
+              class="btn combinacionColor2">
+              <a 
+                href="https://valdiviaturismo.cl/selva-valdiviana/" 
+                target="_blank">
+                  Más información
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cierro modales -->
 
     <section>
         <!-- contacto formulario -->
     </section>
 
 
-    <footer class="celeste py-1">
+    <footer class="py-3 combinacionColor1 ">
       <div  class="container">
         <div class="row ">
           <div class="col-6 ps-md-5 ">
-            <a class="iconoFooter" href="#inicio"><h4>Viajes Chile</h5></a>
+            <a class="sobre" href="#inicio"><h4>Viajes Chile</h4></a>
           </div>
           <div class="col-6 text-end pe-md-5">
             <a href="https://github.com/" target="_blank">
-              <i class="fab fa-github-square fa-2x pe-md-2"></i>
+              <i class="fab fa-github-square fa-2x pe-md-2 sobre"></i>
             </a>
             <a href="https://www.linkedin.com/" target="_blank">
-              <i class="fab fa-linkedin fa-2x ms-2 pe-md-2"></i>
+              <i class="fab fa-linkedin fa-2x ms-2 pe-md-2 sobre"></i>
             </a>
             <a href="https://twitter.com/" target="_blank">
-              <i class="fab fa-twitter-square fa-2x ms-2 pe-md-2"></i>
+              <i class="fab fa-twitter-square fa-2x ms-2 pe-md-2 sobre"></i>
             </a>
             <a href="https://www.facebook.com/" target="_blank">
-              <i class="fab fa-facebook-square fa-2x ms-2"></i>
+              <i class="fab fa-facebook-square fa-2x ms-2 sobre"></i>
             </a>
           </div>
         </div>
@@ -227,12 +454,6 @@
     <script 
         src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-        crossorigin="anonymous">
-    </script>
-    
-    <!-- Popper JS -->
-    <script 
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" 
         crossorigin="anonymous">
     </script>
     

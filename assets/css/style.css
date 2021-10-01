@@ -1,34 +1,51 @@
-
-.navbar {
-    background: none;
-  }
+/* variables de los colores */
+:root {
+  --color-uno:rgb(54, 64, 55);
+  --color-dos:rgb(152, 108, 67);
+  --color-tres:rgb(244,222,201);
+} 
 
 body {
-  color: white;
-  background-color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
 }
+
+h5, h4 ,h3 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
 hr {
   padding: 2px;
+  color: var(--color-uno);
 }
 
-.celeste {
-  background-color: #0dcaf0;
-  border-color: #0dcaf0;
+.combinacionColor1, .sobre:hover {
+  background-color: var(--color-uno);
+  color: var(--color-tres);
 }
 
-.iconoFooter {
-  text-decoration: none;
-  color: white;
+.combinacionColor2 {
+  background-color: var(--color-dos);
+  color: var(--color-tres);
 }
 
-.iconoFooter:visited {
-  color: white;
+.sobre:hover {
+  color: var(--color-dos)
 }
 
 a {
-  color: white;
+  text-decoration: none;
+  color: var(--color-tres);
 }
 
-a:visited {
-  color: white;
+a:active{
+  color: var(--color-tres);
+}
+
+a:hover  {
+  color: var(--color-uno)
 }
