@@ -11,5 +11,28 @@ $(function(){
         }
     });
 
+    
+    //codigo para cambiar elementos de color
+    $(".cambiarColor").dblclick(function(){
+        $(this).css("color","var(--color-dos)");
+    });
+
+
+    //codigo para hacer aparecer seccion quienes somos en modo mobil
+    $("#quienes").click(function(){
+        $("#quienesSomos").removeClass("d-none");
+    });
+
+    //codigo para volver agregar clase d-none al cambiar tamaño de pantalla
+    window.addEventListener("resize", function(){
+        quienesSomos.classList.add("d-none"); 
+    });
+
+
+    //codiogo de tooltiop
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
 
 });
